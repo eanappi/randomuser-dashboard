@@ -12,7 +12,9 @@ func main() {
 		fmt.Errorf("The service is offline by: %s", err)
 	}
 
-	user := users.Results
+	for index, _ := range users.Results {
+		fmt.Println(users.FullName(uint8(index)))
+	}
 
-	fmt.Println(user[0].Gender)
+	//fmt.Println(users.FullName(0))
 }
