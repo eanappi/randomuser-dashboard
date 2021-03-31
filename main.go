@@ -13,8 +13,8 @@ func main() {
 	}
 
 	for index, _ := range users.Results {
-		fmt.Println(users.FullName(uint8(index)))
+		fmt.Println(users.FullName(index))
 	}
 
-	//fmt.Println(users.FullName(0))
+	fmt.Println(users.Summary(1))
 }
