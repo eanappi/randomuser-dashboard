@@ -16,5 +16,7 @@ func main() {
 		fmt.Println(users.FullName(index))
 	}
 
-	fmt.Println(users.Summary(1))
+	for index, _ := range users.Results {
+		fmt.Println(users.Summary(index))
+	}
 }
