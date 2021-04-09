@@ -13,10 +13,6 @@ func main() {
 	}
 
 	for index, _ := range users.Results {
-		fmt.Println(users.FullName(index))
-	}
-
-	for index, _ := range users.Results {
 		fmt.Println(users.Summary(index))
 	}
 }
